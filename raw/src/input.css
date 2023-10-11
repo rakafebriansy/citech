@@ -47,7 +47,7 @@ body {
 }
 
 .project-desc > p {
-    -webkit-line-clamp: 2;
+    -webkit-line-clamp: 8;
     overflow: hidden;
     display: -webkit-box;
     -webkit-box-orient: vertical;  
@@ -70,4 +70,11 @@ body {
     to {
         transform: translateX(-100%);
     }
+}
+
+.view-more > p {
+    -webkit-line-clamp: 8;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;  
 }
