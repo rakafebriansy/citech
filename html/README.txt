@@ -8,7 +8,7 @@ npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/**/*.{html,js}"],
+  content: ["./**/*.{html,js}"],
   theme: {
     extend: {},
   },
