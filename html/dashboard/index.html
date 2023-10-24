@@ -52,7 +52,7 @@
     </header>
 
     <!-- HERO SECTION START -->
-    <section id="hero" class="pt-36 bg-secondary pb-10">
+    <section id="hero" class="pt-40 bg-secondary pb-20">
         <div class="container flex flex-wrap justify-center">
             <div class="self-center px-4 w-9/12 lg:w-1/2">
                 <div class="font-bold text-4xl md:text-6xl">
@@ -73,22 +73,27 @@
 
     <!-- OUR COURSES START -->
     <section id="ourprogram" class="pt-12 pb-12 bg-white">
-        <h1 class="text-center text-3xl font-bold">Our Courses</h1>
-        <div class="w-full flex justify-evenly">
-            <input type="text" name="search-program" id="search-program" placeholder="Enter Keyword" class="border-black border-2 rounded-xl text-lg px-1 w-8/12">
-            <button type="button" class="bg-green-500 rounded-3xl w-2/12 py-2 px-2">Search</button>
+        <h1 class="text-center text-3xl md:text-6xl font-bold mb-6">Our Courses</h1>
+        <div class="w-full flex justify-center">
+            <input type="text" name="search-program" id="search-program" placeholder="Enter Keyword" class="text-lg px-1 w-10/12" style="border: 1px solid black">
         </div>
         <div class="flex flex-wrap justify-center">
             <div class="w-10/12 px-4 md:w-1/2 xl:w-1/4">
-                <div class="bg-white rounded-xl overflow-hidden shadow-lg mb-10 dark:bg-emerald-700">
-                    <img src="dist/img/idea.png" width="150" alt="">
-                    <div class="py-8 px-6">
-                        <h3 class=" font-semibold text-md">Unnamed
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg my-6 dark:bg-emerald-700">
+                    <img src="./dist/Python.jpeg" class="p-5" alt="">
+                    <div class="px-6">
+                        <h3 class="font-semibold text-lg">Python
                         </h3>
-                        <p class="text-sm"> Professor anjay</p>
                         <p class="pt-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat, incidunt?</p>
-                        <p class="font-medium text-orange-500 text-sm">Lorem ipsum dolor sit amet.
-                        </p>
+                        <div class="w-full bg-gray-200 rounded-full overflow-hidden mt-4">
+                            <div id="progress-bar" class="w-[10%] bg-red-500 h-4 text-center"></div>
+                        </div>
+                        <p class="mb-4">0% complete</p>
+                    </div>
+                    <div class="flex flex-wrap justify-end px-6">
+                        <a href=""
+                        class="inline-block md:text-base sm:text-sm mb-5 font-semibold text-white bg-primary py-2 px-5 rounded-full hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out"
+                        target="_blank">Start</a>
                     </div>
                 </div>
             </div>
@@ -96,55 +101,28 @@
     </section>
     <!-- OUR COURSES END -->
 
-    <!-- SUBSCRIBE CARD START -->
-    <section id="subscribe" class="flex justify-center py-14">
-        <div class="w-10/12 bg-blue-400 text-center rounded-2xl py-14 px-5">
-            <p class="text-white text-base md:text-3xl">Subscribe to our newsletter</p>
-            <p class="text-white text-xs md:text-s my-3">Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
-
-                <input type="text" class="py-2 pe-1 ps-2 md:py-4 md:pe-2 md:ps-4 rounded-l-full"
-                    placeholder="  Email Address">
-                <button type="button"
-                    class="bg-orange-400 ps-2 pe-3 py-2 md:ps-4 md:pe-6 md:py-4 rounded-r-full">Send</button>
-        </div>
-    </section>
-    <!-- SUBSCRIBE CARD START -->
-
     <!-- FOOTER START -->
     <footer class="bg-lime-100">
         <div class="container">
-            <div class="flex flex-wrap pt-8">
-                <div class="w-full px-4 mb-12 md:w-2/6">
-                    <span class="block font-bold mb-2"><img class="inline-block me-5" src="./dist/img/logo hitam.png"
+            <div class="flex flex-wrap justify-between pt-8">
+                <div class="w-full px-4 mb-8 md:w-2/6">
+                    <span class="block font-bold mb-2"><img class="inline-block me-5" src="./dist/logo hitam.png"
                             alt="" width="50">ProKidz</span>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo, recusandae.</p>
                 </div>
                 <div class="w-full mb-12 px-4 md:w-1/6">
-                    <span class="block font-bold mb-2">Company</span>
-                    <p>Text1</p>
-                    <p>Text2</p>
-                    <p>Text3</p>
-                </div>
-                <div class="w-full mb-12 px-4 md:w-1/6">
-                    <span class="block font-bold mb-2">Courses</span>
-                    <p>Text1</p>
-                    <p>Text2</p>
-                    <p>Text3</p>
-                </div>
-                <div class="w-full mb-12 px-4 md:w-1/6">
-                    <span class="block font-bold mb-2">Support</span>
-                    <p>Text1</p>
-                    <p>Text2</p>
-                    <p>Text3</p>
-                </div>
-                <div class="w-full mb-12 px-4 md:w-1/6">
-                    <span class="block font-bold mb-2">Contact Info</span>
-                    <p>Text1</p>
-                    <p>Text2</p>
-                    <p>Text3</p>
+                    <ul>
+                        <li>FAQ</li>
+                        <li>Panduan</li>
+                        <li>+0913-705-3875</li>
+                        <li>Email.com</li>
+                        <li>Instagram</li>
+                    </ul>
                 </div>
             </div>
         </div>
     </footer>
-
+    <script src="./dist/script.js"></script>
     <!-- FOOTER END -->
+</body>
+</html>
