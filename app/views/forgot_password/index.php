@@ -19,19 +19,21 @@
                 <p class="lg:text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus dignissimos sunt
                     voluptate ea?</p>
             </div>
-            <div class="flex justify-center w-full">
-                <div class="mt-5 container">
-                    <label for="email" class="text-xl lg:text-2xl block mb-2">
-                        Email Address
-                    </label>
-                    <input type="email" name="kata_sandi" class="py-2 text-xl w-full rounded-xl bg-slate-200">
-                    <button type="submit"
-                        class="mt-7 w-full py-1 bg-blue-400 text-white rounded-lg text-2xl lg:text-3xl">RESET PASSWORD</button>
+            <form action="../../database/database.php" method="post">
+                <div class="flex justify-center w-full">
+                    <div class="mt-5 container">
+                        <label for="email" class="text-xl lg:text-2xl block mb-2">
+                            Email Address
+                        </label>
+                        <input type="email" name="kata_sandi" class="py-2 text-xl w-full rounded-xl bg-slate-200">
+                        <button type="submit" name="change"
+                            class="mt-7 w-full py-1 bg-blue-400 text-white rounded-lg text-2xl lg:text-3xl">RESET PASSWORD</button>
+                    </div>
                 </div>
-            </div>
-            <div class="flex justify-center mt-3">
-                <p>Back to <a href="../login/index.php" class="underline text-blue-500">Sign in</a></p>
-            </div>
+                <div class="flex justify-center mt-3">
+                    <p>Back to <a href="../login/index.php" class="underline text-blue-500">Sign in</a></p>
+                </div>
+            </form>
         </div>
     </section>
 

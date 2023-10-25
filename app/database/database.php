@@ -36,6 +36,13 @@ function loginUser($conn, $email, $password) {
   return 0;
 }
 
+function sendmessage($conn, $email, $message) {
+  $query = "INSERT INTO contact (email, message) VALUES ('$email', '$message')";
+  $hasil = mysqli_query($conn, $query);
+
+  return $hasil;
+}
+
 // sign up
 if (isset($_POST['simpan'])) {
   $username = $_POST['username'];
@@ -45,9 +52,9 @@ if (isset($_POST['simpan'])) {
   $result = registerUser($conn, $username, $email, $password);
 
   if ($result) {
-      // echo "Registrasi berhasil. Anda dapat masuk sekarang.";
-      header("Location: ../views/login/index.php");
-      exit();
+      echo "Registrasi berhasil. Anda dapat masuk sekarang.";
+      // header("Location: ../views/login/index.php");
+      // exit();
   } else {
       echo "Registrasi gagal. Silakan coba lagi.";
   }
@@ -71,46 +78,34 @@ if (isset($_POST['auth'])) {
     }
 }
 
+// contact faq
+if (isset($_POST['send1'])) {
+  $email = $_POST['email'];
+  $message = $_POST['message'];
 
-// $email = "";
-// $password = "";
-// $err = "";
-// $sukses = "";
+  $hasil = sendmessage($conn, $email, $message);
+    if ($hasil) {
+        // echo "Berhasil.";
+        header("Location: ../views/faq/index.php");
+        // exit();
+    } else {
+      echo "gagal";
+    }
+}
 
-// if(isset($_POST['simpan'])){
-//   $email = $_POST['email'];
-//   $password = $_POST['password'];
-//   $konfirmasi_password = $_POST['konfirmasi_password'];
+// contact panduan
+if (isset($_POST['send2'])) {
+  $email = $_POST['email'];
+  $message = $_POST['message'];
 
-//   if($email == '' or $password == '' or $konfirmasi_password == ''){
-//     $err .= "<li>Silahkan masukkan semua isian.</li>";
-//   }
-
-//   if($email != ''){
-//     $sql1 = "SELECT email_address FROM account WHERE email_address = '$email";
-//     $q1 = mysqli_query($conn, $sql1);
-//     $n1 = mysqli_num_rows($q1);
-//     if($n1 > 0){
-//       $err .= "<li>Email yang anda masukkan sudah terdaftar</li>";
-//     }
-
-//     if(!filter_var($email,FILTER_VALIDATE_EMAIL)){
-//       $err .= "<li>Email yang anda masukkan tidak valid</li>";
-//     }
-//   }
-
-//   if($password != $konfirmasi_password){
-//     $err .= "</li>Not Matched</li>";
-//   }
-
-//   if(empty($err)){
-
-//     $sql1 = "INSERT INTO account(email_address,password) VALUES('$email','$password')";
-//     $q1 = mysqli_query($conn, $sql1);
-//     if($q1){
-//       $sukses = "Successfull";
-//     }
-//   }
-// }
+  $hasil = sendmessage($conn, $email, $message);
+    if ($hasil) {
+        // echo "Berhasil.";
+        header("Location: ../views/panduan/index.php");
+        // exit();
+    } else {
+      echo "gagal";
+    }
+}
 
 ?>

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ProKidz</title>
-    <link rel="stylesheet" href="dist/output.css">
+    <link rel="stylesheet" href="./output.css">
 </head>
 
 <body>
@@ -99,14 +99,16 @@
 
     <!-- SUBSCRIBE CARD START -->
     <section id="subscribe" class="flex justify-center py-14">
-        <div class="w-10/12 bg-blue-400 text-center rounded-2xl py-14 px-5">
-            <p class="font-bold text-white text-base md:text-3xl mb-4 md:mb-6">Contact Me</p>
-            <input type="text" class="py-2 md:py-4 w-3/5 rounded-full mb-5" placeholder="      Email Address">
-            <div class="email">
-                <input type="text" class="py-2 md:py-4 w-2/5 rounded-l-full" placeholder="       Message">
-                <button type="button" class="bg-orange-400 py-2 md:py-4 w-1/5 rounded-r-full">Send</button>
+        <form action="../../database/database.php" method="post">
+            <div class="w-10/12 bg-blue-400 text-center rounded-2xl py-14 px-5">
+                <p class="font-bold text-white text-base md:text-3xl mb-4 md:mb-6">Contact Me</p>
+                <input type="email" name="email" class="py-2 md:py-4 w-3/5 rounded-full mb-5" placeholder="      Email Address">
+                <div class="email">
+                    <input type="text" name="message" class="py-2 md:py-4 w-2/5 rounded-l-full" placeholder="       Message">
+                    <button type="submit" name="send1" class="bg-orange-400 py-2 md:py-4 w-1/5 rounded-r-full">Send</button>
+                </div>
             </div>
-        </div>
+        </form>
     </section>
     <!-- SUBSCRIBE CARD START -->
 
