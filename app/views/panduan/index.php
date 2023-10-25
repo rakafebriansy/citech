@@ -43,28 +43,28 @@
         <h1 class="font-bold text-4xl md:text-6xl">How to use <span class="text-red-500">ProKidz?</span></h1>
         <ul>
             <li class="flex md:w-1/2 my-4">
-                <img src="../../public/img/panduan1.png" width="50" alt=""><p class="md:text-xl ms-4">Press the signup button register an account if you don't have an account yet</p>
+                <img src="../../../public/img/panduan1.png" width="50" alt=""><p class="md:text-xl ms-4">Press the signup button register an account if you don't have an account yet</p>
             </li>
             <li class="flex md:w-1/2 my-4">
-                <img src="../../public/img/panduan2.png" width="50" alt=""><p class="md:text-xl ms-4">Login to enter the registered account</p>
+                <img src="../../../public/img/panduan2.png" width="50" alt=""><p class="md:text-xl ms-4">Login to enter the registered account</p>
             </li>
             <li class="flex md:w-1/2 my-4">
-                <img src="../../public/img/panduan3.png" width="50" alt=""><p class="md:text-xl ms-4">Choose the course programs you want to start studying</p>
+                <img src="../../../public/img/panduan3.png" width="50" alt=""><p class="md:text-xl ms-4">Choose the course programs you want to start studying</p>
             </li>
             <li class="flex md:w-1/2 my-4">
-                <img src="../../public/img/panduan4.png" width="50" alt=""><p class="md:text-xl ms-4">Take the pre-test before starting to study</p>
+                <img src="../../../public/img/panduan4.png" width="50" alt=""><p class="md:text-xl ms-4">Take the pre-test before starting to study</p>
             </li>
             <li class="flex md:w-1/2 my-4">
-                <img src="../../public/img/panduan5.png" width="50" alt=""><p class="md:text-xl ms-4">Watch learning videos</p>
+                <img src="../../../public/img/panduan5.png" width="50" alt=""><p class="md:text-xl ms-4">Watch learning videos</p>
             </li>
             <li class="flex md:w-1/2 my-4">
-                <img src="../../public/img/panduan6.png" width="50" alt=""><p class="md:text-xl ms-4">Do the post test quiz after watching the lesson</p>
+                <img src="../../../public/img/panduan6.png" width="50" alt=""><p class="md:text-xl ms-4">Do the post test quiz after watching the lesson</p>
             </li>
             <li class="flex md:w-1/2 my-4">
-                <img src="../../public/img/panduan7.png" width="50" alt=""><p class="md:text-xl ms-4">Monitoring progress to see how far you have learned</p>
+                <img src="../../../public/img/panduan7.png" width="50" alt=""><p class="md:text-xl ms-4">Monitoring progress to see how far you have learned</p>
             </li>
             <li class="flex md:w-1/2 my-4">
-                <img src="../../public/img/panduan8.png" width="50" alt=""><p class="md:text-xl ms-4">Download the certificate after all learning is complete</p>
+                <img src="../../../public/img/panduan8.png" width="50" alt=""><p class="md:text-xl ms-4">Download the certificate after all learning is complete</p>
             </li>
         </ul>
     </section>
