@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ProKidz</title>
-    <link rel="stylesheet" href="./output.css">
+    <link rel="stylesheet" href="dist/output.css">
 </head>
 
 <body>
@@ -25,7 +25,7 @@
     <section id="hero" class="pt-36 pb-32 bg-secondary">
         <div class="container flex flex-wrap justify-center overflow-hidden">
             <div class="self-center px-4 w-9/12 lg:w-1/2">
-                <div class="font-bold text-center text-4xl md:text-6xl">
+                <div class="font-bold text-center text-4xl md:text-6xl" style="line-height: 5rem;">
                     <h1>Frequently Ask Question About <span class="text-red-500">ProKidz</span></h1>
                 </div>
             </div>
@@ -42,30 +42,57 @@
     <!-- OUR PROGRAM START -->
     <section id="ourprogram" class="pt-12 pb-12 bg-secondary">
         <div class="flex flex-wrap justify-center">
-            <div class="w-3/4 bg-white px-3 py-1 rounded-md flex justify-between mb-4">
-                <p class="inline-block">Is this Prokidz course paid?</p>
-                <span class="ps-1">▼</span>
+            <div id="faq1" class="w-3/4 bg-white px-3 py-1 rounded-md mb-4">
+                <div class="flex justify-between">
+                    <p class="font-bold text-lg inline-block">Is this Prokidz course paid?</p>
+                    <button class="ps-1" onclick="document.querySelector('#faq1 > p').classList.toggle('hidden')">▼</button>
+                </div>
+                <p class="hidden">No, this platform is free and can be used immediately when you have registered an account</p>
             </div>
-            <div class="w-3/4 bg-white px-3 py-1 rounded-md flex justify-between mb-4">
-                <p class="inline-block">How is learning at Prokidz?</p>
-                <span class="ps-1">▼</span>
+            <div id="faq2" class="w-3/4 bg-white px-3 py-1 rounded-md mb-4">
+                <div class="flex justify-between">
+                    <p class="font-bold text-lg inline-block">How is learning at Prokidz?</p>
+                    <button class="ps-1" onclick="document.querySelector('#faq2 > p').classList.toggle('hidden')">▼</button>
+                </div>
+                <p class="hidden">Learning at ProKidz is by watching videos and then there is a quiz to determine your abilities and knowledge</p>
             </div>
-            <div class="w-3/4 bg-white px-3 py-1 rounded-md flex justify-between mb-4">
-                <p class="inline-block">How to study at Prokidz?</p>
-                <span class="ps-1">▼</span>
+            <div id="faq3" class="w-3/4 bg-white px-3 py-1 rounded-md mb-4">
+                <div class="flex justify-between">
+                    <p class="font-bold text-lg inline-block">How do I access learning on Prokidz?
+                    </p>
+                    <button class="ps-1" onclick="document.querySelector('#faq3 > p').classList.toggle('hidden')">▼</button>
+                </div>
+                <p class="hidden">How to access it is by logging in to a registered account and you can immediately select the programming language you want to learn. A more complete method is on the guide page</p>
             </div>
-            <div class="w-3/4 bg-white px-3 py-1 rounded-md flex justify-between mb-4">
-                <p class="inline-block">Are all the available features is free?</p>
-                <span class="ps-1">▼</span>
+            <div id="faq4" class="w-3/4 bg-white px-3 py-1 rounded-md mb-4">
+                <div class="flex justify-between">
+                    <p class="font-bold text-lg inline-block">Are all the available features is free?</p>
+                    <button class="ps-1" onclick="document.querySelector('#faq4 > p').classList.toggle('hidden')">▼</button>
+                </div>
+                <p class="hidden">Yes, all the features available are neither paid nor free</p>
             </div>
-            <div class="w-3/4 bg-white px-3 py-1 rounded-md flex justify-between mb-4">
-                <p class="inline-block">Who can register on this platform?</p>
-                <span class="ps-1">▼</span>
+            <div id="faq8" class="w-3/4 bg-white px-3 py-1 rounded-md mb-4">
+                <div class="flex justify-between">
+                    <p class="font-bold text-lg inline-block">Is this Prokidz course paid?</p>
+                    <button class="ps-1" onclick="document.querySelector('#faq8 > p').classList.toggle('hidden')">▼</button>
+                </div>
+                <p class="hidden">No, this platform is free and can be used immediately when you have registered an account</p>
             </div>
-            <div class="w-3/4 bg-white px-3 py-1 rounded-md flex justify-between">
-                <p class="inline-block">If I want to ask, where should I contact?</p>
-                <span class="ps-1">▼</span>
+            <div id="faq5" class="w-3/4 bg-white px-3 py-1 rounded-md mb-4">
+                <div class="flex justify-between">
+                    <p class="font-bold text-lg inline-block">Who can register on this platform?</p>
+                    <button class="ps-1" onclick="document.querySelector('#faq5 > p').classList.toggle('hidden')">▼</button>
+                </div>
+                <p class="hidden">Everyone, be it children who register their accounts or parents who register</p>
             </div>
+            <div id="faq6" class="w-3/4 bg-white px-3 py-1 rounded-md mb-4">
+                <div class="flex justify-between">
+                    <p class="font-bold text-lg inline-block">If I want to ask, where should I contact?</p>
+                    <button class="ps-1" onclick="document.querySelector('#faq6 > p').classList.toggle('hidden')">▼</button>
+                </div>
+                <p class="hidden">How to access it is by logging in to a registered account and you can immediately select the programming language you want to learn. A more complete method is on the guide page</p>
+            </div>
+            
         </div>
     </section>
     <!-- OUR PROGRAM END -->
@@ -95,7 +122,7 @@
                 <div class="w-full mb-12 px-4 md:w-1/6">
                     <ul>
                         <li>FAQ</li>
-                        <li><a href="../panduan/index.php">Panduan</a></li>
+                        <li>Panduan</li>
                         <li>+0913-705-3875</li>
                         <li>Email.com</li>
                         <li>Instagram</li>
