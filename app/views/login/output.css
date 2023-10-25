@@ -434,6 +434,12 @@ video {
   display: none;
 }
 
+@font-face {
+  font-family: Poppins;
+
+  src: url(Poppins-Regular.ttf);
+}
+
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -809,6 +815,10 @@ video {
 
 .opacity-0 {
   opacity: 0;
+}
+
+body {
+  font-family: 'Poppins', serif;
 }
 
 .checkbox-container {

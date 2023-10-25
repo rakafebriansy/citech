@@ -146,26 +146,30 @@
         <p class="text-center pt-4 pb-8"> Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
         <div class="flex flex-wrap justify-evenly">
             <div class="w-10/12 px-4 md:w-1/2 xl:w-1/4">
-                <div class="bg-white rounded-xl overflow-hidden shadow-lg mb-10 dark:bg-emerald-700">
-                    <img src="../../../public/img/program2.jpg" width="150" alt="">
+                <div class="bg-white rounded-2xl overflow-hidden p-2 shadow-lg mb-10 dark:bg-emerald-700">
+                    <img src="../../../public/img/program2.jpg" width="" class="rounded-xl" alt="">
                     <div class="py-8 px-6">
-                        <h3 class=" font-semibold text-md">Quiz
+                        <h3 class=" font-semibold text-sm">Quiz
                         </h3>
-                        <p class="text-sm">Take quizzes before and after training</p>
+                        <p class="text-sm">Take quiz before and after training</p>
                     </div>
                 </div>
-                <div class="bg-white rounded-xl overflow-hidden shadow-lg mb-10 dark:bg-emerald-700">
-                    <img src="../../../public/img/program3.jpg" width="150" alt="">
+            </div>
+            <div class="w-10/12 px-4 md:w-1/2 xl:w-1/4">
+                <div class="bg-white rounded-2xl overflow-hidden p-2 shadow-lg mb-10 dark:bg-emerald-700">
+                    <img src="../../../public/img/program3.jpg" width="" class="rounded-xl" alt="">
                     <div class="py-8 px-6">
-                        <h3 class=" font-semibold text-md">Course Coding for Kids
+                        <h3 class=" font-semibold text-sm">Course Coding for Kids
                         </h3>
-                        <p class="text-sm">Coding training for children with various programming languages</p>
+                        <p class="text-sm">Coding training for children</p>
                     </div>
                 </div>
-                <div class="bg-white rounded-xl overflow-hidden shadow-lg mb-10 dark:bg-emerald-700">
-                    <img src="../../../public/img/program1.jpg" width="150" alt="">
+            </div>
+            <div class="w-10/12 px-4 md:w-1/2 xl:w-1/4">
+                <div class="bg-white rounded-2xl overflow-hidden p-2 shadow-lg mb-10 dark:bg-emerald-700">
+                    <img src="../../../public/img/program1.jpg" width="" class="rounded-xl" alt="">
                     <div class="py-8 px-6">
-                        <h3 class=" font-semibold text-md">Monitoring Progress Study
+                        <h3 class=" font-semibold text-sm">Monitoring Progress Study
                         </h3>
                         <p class="text-sm">Monitoring learning progress</p>
                     </div>

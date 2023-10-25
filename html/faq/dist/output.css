@@ -434,6 +434,12 @@ video {
   display: none;
 }
 
+@font-face {
+  font-family: Poppins;
+
+  src: url(Poppins-Regular.ttf);
+}
+
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -835,6 +841,10 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+body {
+  font-family: 'Poppins', serif;
 }
 
 @media (min-width: 768px) {
