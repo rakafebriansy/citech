@@ -1,54 +1,220 @@
+<?php
+session_start();
+
+if (!isset($_SESSION["user"])) {
+    header("Location: ../login/index.php");
+    exit();
+}
+
+
+?>
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
-    <link rel="stylesheet" href="../../../html/login/dist/output.css">
+    <title>ProKidz</title>
+    <link rel="stylesheet" href="./output.css">
 </head>
 
 <body>
-    <section class="flex h-screen">
-        <div class="hidden md:block md:w-1/2">
-            <img src="./dist/hero-login.jpg" class="h-screen w-full" alt="">
-        </div>
-        <div class="container p-5 md:w-1/2 md:py-0 md:px-12 lg:px-16 mt-16">
-            <div class="row-auto">
-                <h1 class="text-center md:text-start font-bold text-3xl lg:text-5xl mb-4">Sign in</h1>
-                <p class="lg:text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus dignissimos sunt
-                    voluptate ea?</p>
+    <header class="bg-white absolute top-0 left-0 w-full flex items-center z-10">
+        <div class="container">
+            <div class="flex items-center justify-between relative">
+                <div class="px-4">
+                    <a href="#hero" class="font-bold text-lg text-primary block py-6">
+                        <img src="../../../public/img/logo.png" width="50" alt="">
+                    </a>
+                </div>
+                <div class="items-center p-4 hidden lg:flex">
+                    <nav id="nav-menu"
+                        class="hidden absolute bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none dark:bg-dark dark:shadow-secondary lg:dark:bg-transparent">
+                        <ul class="block lg:flex">
+                            <li class="group">
+                                <a href="#hero"
+                                    class="text-base text-dark py-2 mx-8 flex group-hover:text-primary dark:text-white">Home</a>
+                            </li>
+                            <li class="group">
+                                <a href="#about"
+                                    class="text-base text-dark py-2 mx-8 flex group-hover:text-primary dark:text-white">About
+                                    us</a>
+                            </li>
+                            <li class="group">
+                                <a href="#portfolio"
+                                    class="text-base text-dark py-2 mx-8 flex group-hover:text-primary dark:text-white">Our
+                                    Program</a>
+                            </li>
+                            <li class="group">
+                                <a href="#technologies"
+                                    class="text-base text-dark py-2 mx-8 flex group-hover:text-primary dark:text-white">Contact
+                                    us</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="profile">
+                    <img class="inline-block" src="../../../public/img/user.png" width="36" alt="">
+                    <p class="inline-block ms-2">
+                        <?=
+                         $_SESSION["user"]["username"]
+                        ?>
+                    </p>
+                </div>
             </div>
-            <form action="../../app/database/database.php" method="post">
-                <div class="flex justify-center w-full">
-                    <div class="mt-5 container">
-                        <label for="email" class="text-xl lg:text-2xl block mb-2">
-                            Email Address
-                        </label>
-                        <input type="email" name="email" class="py-2 text-xl w-full rounded-xl bg-slate-200">
-                        <label for="password" class="text-xl lg:text-2xl block mb-2 mt-3">
-                            Password
-                        </label>
-                        <input type="password" name="password" class="py-2 text-xl w-full rounded-xl bg-slate-200 block">
-                        <label class="checkbox-container block relative ps-8 mb-3 cursor-pointer text-sm mt-2">
-                            <input type="checkbox" width="10" class="mt-3 ms-1 absolute opacity-0 cursor-pointer h-0 w-0">
-                            <span
-                                class="checkmark absolute top-0 left-0 h-6 w-6 bg-slate-200 after:content-none after:absolute after:hidden rounded-lg mt-3"></span>
-                            <span class="absolute top-0 left-0 h-6 w-6 opacity-0 hover:opacity-20 bg-black"></span>
-                        </label>
-                        <p class="ms-8 inline-block mt-2 mb-2 lg:text-lg">Remember me</p>
-                        <button type="submit" name="auth"
-                            class="mt-3 w-full py-1 bg-blue-400 text-white rounded-lg text-2xl lg:text-3xl">LOGIN</button>
-                    </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION START -->
+    <section id="hero" class="pt-40 bg-secondary pb-20">
+        <div class="container flex flex-wrap justify-center">
+            <div class="self-center px-4 w-9/12 lg:w-1/2">
+                <div class="font-bold text-4xl md:text-6xl">
+                    <h1>Programming</h1>
                 </div>
-                <div class="flex justify-between mt-3">
-                    <p>New user? <a href="../signup/index.html" class="underline text-blue-500">Sign up</a></p>
-                    <a href="../forgot_password/index.html" class="underline text-blue-500">Forgot Password?</a>
+                <div class="font-bold text-4xl md:text-6xl">
+                    <h1 class="text-red-500">Languages</h1>
                 </div>
-            </form>
+                <div class="md:text-base sm:text-sm mt-5 md:mt-5 mb-3 md:mb-5">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo consequuntur recusandae
+                        molestias facilis. Aspernatur praesentium culpa sapiente soluta quae? Laboriosam?</p>
+                </div>
+            </div>
+            <div class="bg-blue-500 w-2/12 h-[40%] hidden xl:h-[60%] lg:block absolute top-28 right-60"></div>
+            <img src="../../../public/img/hero-dashboard.jpg" alt="" class="hidden lg:block w-5/12 z-10">
         </div>
     </section>
+    <!-- HERO SECTION END -->
 
+    <!-- OUR COURSES START -->
+    <section id="ourprogram" class="pt-12 pb-12 bg-white">
+        <h1 class="text-center text-3xl md:text-6xl font-bold mb-6">Our Courses</h1>
+        <div class="w-full flex justify-center">
+            <input type="text" name="search-program" id="search-program" placeholder="Enter Keyword" class="text-xl px-2 py-2 w-10/12" style="border: 1px solid black">
+        </div>
+        <div class="flex flex-wrap justify-evenly">
+            <div class="w-10/12 px-4 md:w-1/2 xl:w-1/4">
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg my-6 dark:bg-emerald-700">
+                    <img src="../../../public/img/Python.jpeg" class="p-5" alt="">
+                    <div class="px-6">
+                        <h3 class="font-semibold text-lg">Python
+                        </h3>
+                        <p class="pt-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat, incidunt?</p>
+                        <div class="w-full bg-gray-200 rounded-full overflow-hidden mt-4">
+                            <div id="progress-bar" class="w-[10%] bg-red-500 h-4 text-center"></div>
+                        </div>
+                        <p class="mb-4">0% complete</p>
+                    </div>
+                    <div class="flex flex-wrap justify-end px-6">
+                        <a href=""
+                        class="inline-block md:text-base sm:text-sm mb-5 font-semibold text-white bg-primary py-2 px-5 rounded-full hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out"
+                        target="_blank">Start</a>
+                    </div>
+                </div>
+            </div>
+            <div class="w-10/12 px-4 md:w-1/2 xl:w-1/4">
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg my-6 dark:bg-emerald-700">
+                    <img src="../../../public/img/Python.jpeg" class="p-5" alt="">
+                    <div class="px-6">
+                        <h3 class="font-semibold text-lg">Python
+                        </h3>
+                        <p class="pt-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat, incidunt?</p>
+                        <div class="w-full bg-gray-200 rounded-full overflow-hidden mt-4">
+                            <div id="progress-bar" class="w-[10%] bg-red-500 h-4 text-center"></div>
+                        </div>
+                        <p class="mb-4">0% complete</p>
+                    </div>
+                    <div class="flex flex-wrap justify-end px-6">
+                        <a href=""
+                        class="inline-block md:text-base sm:text-sm mb-5 font-semibold text-white bg-primary py-2 px-5 rounded-full hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out"
+                        target="_blank">Start</a>
+                    </div>
+                </div>
+            </div>
+            <div class="w-10/12 px-4 md:w-1/2 xl:w-1/4">
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg my-6 dark:bg-emerald-700">
+                    <img src="../../../public/img/Python.jpeg" class="p-5" alt="">
+                    <div class="px-6">
+                        <h3 class="font-semibold text-lg">Python
+                        </h3>
+                        <p class="pt-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat, incidunt?</p>
+                        <div class="w-full bg-gray-200 rounded-full overflow-hidden mt-4">
+                            <div id="progress-bar" class="w-[10%] bg-red-500 h-4 text-center"></div>
+                        </div>
+                        <p class="mb-4">0% complete</p>
+                    </div>
+                    <div class="flex flex-wrap justify-end px-6">
+                        <a href=""
+                        class="inline-block md:text-base sm:text-sm mb-5 font-semibold text-white bg-primary py-2 px-5 rounded-full hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out"
+                        target="_blank">Start</a>
+                    </div>
+                </div>
+            </div>
+            <div class="w-10/12 px-4 md:w-1/2 xl:w-1/4">
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg my-6 dark:bg-emerald-700">
+                    <img src="../../../public/img/Python.jpeg" class="p-5" alt="">
+                    <div class="px-6">
+                        <h3 class="font-semibold text-lg">Python
+                        </h3>
+                        <p class="pt-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat, incidunt?</p>
+                        <div class="w-full bg-gray-200 rounded-full overflow-hidden mt-4">
+                            <div id="progress-bar" class="w-[10%] bg-red-500 h-4 text-center"></div>
+                        </div>
+                        <p class="mb-4">0% complete</p>
+                    </div>
+                    <div class="flex flex-wrap justify-end px-6">
+                        <a href=""
+                        class="inline-block md:text-base sm:text-sm mb-5 font-semibold text-white bg-primary py-2 px-5 rounded-full hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out"
+                        target="_blank">Start</a>
+                    </div>
+                </div>
+            </div>
+            <div class="w-10/12 px-4 md:w-1/2 xl:w-1/4">
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg my-6 dark:bg-emerald-700">
+                    <img src="../../../public/img/Python.jpeg" class="p-5" alt="">
+                    <div class="px-6">
+                        <h3 class="font-semibold text-lg">Python
+                        </h3>
+                        <p class="pt-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat, incidunt?</p>
+                        <div class="w-full bg-gray-200 rounded-full overflow-hidden mt-4">
+                            <div id="progress-bar" class="w-[10%] bg-red-500 h-4 text-center"></div>
+                        </div>
+                        <p class="mb-4">0% complete</p>
+                    </div>
+                    <div class="flex flex-wrap justify-end px-6">
+                        <a href=""
+                        class="inline-block md:text-base sm:text-sm mb-5 font-semibold text-white bg-primary py-2 px-5 rounded-full hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out"
+                        target="_blank">Start</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- OUR COURSES END -->
+
+    <!-- FOOTER START -->
+    <footer class="bg-lime-100">
+        <div class="container">
+            <div class="flex flex-wrap justify-between pt-8">
+                <div class="w-full px-4 mb-8 md:w-2/6">
+                    <span class="block font-bold mb-2"><img class="inline-block me-5" src="./dist/logo hitam.png"
+                            alt="" width="50">ProKidz</span>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo, recusandae.</p>
+                </div>
+                <div class="w-full mb-12 px-4 md:w-1/6">
+                    <ul>
+                        <li>FAQ</li>
+                        <li>Panduan</li>
+                        <li>+0913-705-3875</li>
+                        <li>Email.com</li>
+                        <li>Instagram</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="./script.js"></script>
+    <!-- FOOTER END -->
 </body>
-
 </html>

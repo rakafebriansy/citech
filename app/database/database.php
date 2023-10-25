@@ -1,14 +1,15 @@
 <?php
+session_start();
 
 $conn = new mysqli('localhost', 'root', '', 'prokidz');
 
 $errors = [];
 
-function registerUser($conn, $email, $password) {
+function registerUser($conn, $username, $email, $password) {
 
   // $hashedPassword = password_hash($password, PASSWORD_DEFAULT);
 
-  $query = "INSERT INTO account (email_address, password) VALUES ('$email', '$password')";
+  $query = "INSERT INTO account (username, email_address, password) VALUES ('$username', '$email', '$password')";
   $result = mysqli_query($conn, $query);
 
   return $result;
@@ -20,27 +21,33 @@ function loginUser($conn, $email, $password) {
 
   if ($result && mysqli_num_rows($result) > 0) {
       $user = mysqli_fetch_assoc($result);
+      // var_dump(password_verify($password, $user['password']));die;
       // if (password_verify($password, $user['password'])) {
+      //     var_dump("true");die;
       //     return $user;
+      // }
+      // else {
+      //   var_dump($password);die;
       // }
       if ($password == $user['password']) {
         return $user;
       }
   }
-
-  return null;
+  return 0;
 }
 
 // sign up
 if (isset($_POST['simpan'])) {
+  $username = $_POST['username'];
   $email = $_POST['email'];
   $password = $_POST['password'];
 
-  $result = registerUser($conn, $email, $password);
+  $result = registerUser($conn, $username, $email, $password);
 
   if ($result) {
       // echo "Registrasi berhasil. Anda dapat masuk sekarang.";
-      header("Location: ../../html/dashboard/index.html");
+      header("Location: ../views/login/index.php");
+      exit();
   } else {
       echo "Registrasi gagal. Silakan coba lagi.";
   }
@@ -48,6 +55,7 @@ if (isset($_POST['simpan'])) {
     
 // login
 if (isset($_POST['auth'])) {
+  $username = $_POST['username'];
   $email = $_POST['email'];
   $password = $_POST['password'];
 
@@ -55,10 +63,11 @@ if (isset($_POST['auth'])) {
 
     if ($user) {
         // echo "Selamat datang, " . $user['email_address'];
-        header("Location: ../../html/dashboard/index.html");
-    } else {
-        
-        echo "Kata sandi salah atau pengguna tidak ditemukan.";
+        $_SESSION["user"] = $user;
+        header("Location: ../views/home/index.php");
+    } else if ($user == 0) {
+      $_SESSION["gagal"] = true;
+      header("Location: ../views/login/index.php");
     }
 }
 
