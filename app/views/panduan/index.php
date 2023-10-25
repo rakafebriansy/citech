@@ -38,33 +38,33 @@
 
     <!-- DESCRIPTION START -->
     <section id="description" class="py-10 container">
-        <h1 class="font-bold text-4xl md:text-">What is <span class="text-red-500">ProKidz?</span></h1>
-        <p class="my-4">ProKidz Web is an innovative platform specifically designed to help children learn programming in an interactive and fun way. With a child-friendly interface and content tailored to their needs, ProKidz Web allows children to understand basic programming concepts through quizzes, learning videos, and interesting projects. With full guidance and support, children can develop technical skills, problem solving and creativity through interesting and fun learning experiences.</p>
+        <h1 class="font-bold text-4xl md:text-6xl">What is <span class="text-red-500">ProKidz?</span></h1>
+        <p class="my-4 md:text-xl">ProKidz Web is an innovative platform specifically designed to help children learn programming in an interactive and fun way. With a child-friendly interface and content tailored to their needs, ProKidz Web allows children to understand basic programming concepts through quiz, learning videos, and interesting projects. With full guidance and support, children can develop technical skills, problem solving and creativity through interesting and fun learning experiences.</p>
         <h1 class="font-bold text-4xl md:text-6xl">How to use <span class="text-red-500">ProKidz?</span></h1>
         <ul>
-            <li class="block">
-                <p>Press the signup button register an account if you don't have an account yet</p>
+            <li class="flex md:w-1/2 my-4">
+                <img src="../../public/img/panduan1.png" width="50" alt=""><p class="md:text-xl ms-4">Press the signup button register an account if you don't have an account yet</p>
             </li>
-            <li class="block">
-                <p>Login to enter the registered account</p>
+            <li class="flex md:w-1/2 my-4">
+                <img src="../../public/img/panduan2.png" width="50" alt=""><p class="md:text-xl ms-4">Login to enter the registered account</p>
             </li>
-            <li class="block">
-                <p>Choose the course programs you want to start studying</p>
+            <li class="flex md:w-1/2 my-4">
+                <img src="../../public/img/panduan3.png" width="50" alt=""><p class="md:text-xl ms-4">Choose the course programs you want to start studying</p>
             </li>
-            <li class="block">
-                <p>Take the pre-test before starting to study</p>
+            <li class="flex md:w-1/2 my-4">
+                <img src="../../public/img/panduan4.png" width="50" alt=""><p class="md:text-xl ms-4">Take the pre-test before starting to study</p>
             </li>
-            <li class="block">
-                <p>Watch learning videos</p>
+            <li class="flex md:w-1/2 my-4">
+                <img src="../../public/img/panduan5.png" width="50" alt=""><p class="md:text-xl ms-4">Watch learning videos</p>
             </li>
-            <li class="block">
-                <p>Do the post test quiz after watching the lesson</p>
+            <li class="flex md:w-1/2 my-4">
+                <img src="../../public/img/panduan6.png" width="50" alt=""><p class="md:text-xl ms-4">Do the post test quiz after watching the lesson</p>
             </li>
-            <li class="block">
-                <p>Monitoring progress to see how far you have learned</p>
+            <li class="flex md:w-1/2 my-4">
+                <img src="../../public/img/panduan7.png" width="50" alt=""><p class="md:text-xl ms-4">Monitoring progress to see how far you have learned</p>
             </li>
-            <li class="block">
-                <p>Download the certificate after all learning is complete</p>
+            <li class="flex md:w-1/2 my-4">
+                <img src="../../public/img/panduan8.png" width="50" alt=""><p class="md:text-xl ms-4">Download the certificate after all learning is complete</p>
             </li>
         </ul>
     </section>
@@ -76,24 +76,28 @@
         <p class="text-center pt-4 pb-8"> Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
         <div class="flex flex-wrap justify-evenly">
             <div class="w-10/12 px-4 md:w-1/2 xl:w-1/4">
-                <div class="bg-white rounded-xl overflow-hidden shadow-lg mb-10 dark:bg-emerald-700">
-                    <img src="../../../public/img/program2.jpg" width="150" alt="">
+                <div class="bg-white rounded-2xl overflow-hidden p-2 shadow-lg mb-10 dark:bg-emerald-700">
+                    <img src="../../../public/img/program2.jpg" width="" class="rounded-xl" alt="">
                     <div class="py-8 px-6">
                         <h3 class=" font-semibold text-md">Quiz
                         </h3>
                         <p class="text-sm">Take quizzes before and after training</p>
                     </div>
                 </div>
-                <div class="bg-white rounded-xl overflow-hidden shadow-lg mb-10 dark:bg-emerald-700">
-                    <img src="../../../public/img/program3.jpg" width="150" alt="">
+            </div>
+            <div class="w-10/12 px-4 md:w-1/2 xl:w-1/4">
+                <div class="bg-white rounded-2xl overflow-hidden p-2 shadow-lg mb-10 dark:bg-emerald-700">
+                    <img src="../../../public/img/program3.jpg" width="" class="rounded-xl" alt="">
                     <div class="py-8 px-6">
                         <h3 class=" font-semibold text-md">Course Coding for Kids
                         </h3>
-                        <p class="text-sm">Coding training for children with various programming languages</p>
+                        <p class="text-sm">Coding training for children</p>
                     </div>
                 </div>
-                <div class="bg-white rounded-xl overflow-hidden shadow-lg mb-10 dark:bg-emerald-700">
-                    <img src="../../../public/img/program1.jpg" width="150" alt="">
+            </div>
+            <div class="w-10/12 px-4 md:w-1/2 xl:w-1/4">
+                <div class="bg-white rounded-2xl overflow-hidden p-2 shadow-lg mb-10 dark:bg-emerald-700">
+                    <img src="../../../public/img/program1.jpg" width="" class="rounded-xl" alt="">
                     <div class="py-8 px-6">
                         <h3 class=" font-semibold text-md">Monitoring Progress Study
                         </h3>
