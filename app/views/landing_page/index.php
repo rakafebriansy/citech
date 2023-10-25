@@ -125,16 +125,16 @@
     <section id="bahasa" class="flex justify-center">
         <div class="pb-5">
             <div class="inline-block py-2 md:py-4 px-8 mx-1 bg-rose-400 md:px-16 xl:px-20 rounded-l-xl">
-                <img src="dist/img/cs.png" alt="" class="w-4 md:w-12">
+                <img src="../../../public/img/cs.png" alt="" class="w-4 md:w-12">
             </div>
             <div class="inline-block py-2 md:py-4 px-8 mx-1 bg-rose-400 md:px-16 xl:px-20">
-                <img src="dist/img/css.png" alt="" class="w-4 md:w-12">
+                <img src="../../../public/img/css.png" alt="" class="w-4 md:w-12">
             </div>
             <div class="inline-block py-2 md:py-4 px-8 mx-1 bg-rose-400 md:px-16 xl:px-20">
-                <img src="dist/img/js.png" alt="" class="w-4 md:w-12">
+                <img src="../../../public/img/js.png" alt="" class="w-4 md:w-12">
             </div>
             <div class="inline-block py-2 md:py-4 px-8 mx-1 bg-rose-400 md:px-16 xl:px-20 rounded-r-xl">
-                <img src="dist/img/html.png" alt="" class="w-4 md:w-12">
+                <img src="../../../public/img/html.png" alt="" class="w-4 md:w-12">
             </div>
         </div>
     </section>
@@ -147,66 +147,27 @@
         <div class="flex flex-wrap justify-evenly">
             <div class="w-10/12 px-4 md:w-1/2 xl:w-1/4">
                 <div class="bg-white rounded-xl overflow-hidden shadow-lg mb-10 dark:bg-emerald-700">
-                    <img src="../../../public/img/idea.png" width="150" alt="">
+                    <img src="../../../public/img/program2.jpg" width="150" alt="">
                     <div class="py-8 px-6">
-                        <h3 class=" font-semibold text-md">Unnamed
+                        <h3 class=" font-semibold text-md">Quiz
                         </h3>
-                        <p class="text-sm"> Professor anjay</p>
-                        <p class="pt-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat, incidunt?</p>
-                        <p class="font-medium text-orange-500 text-sm">Lorem ipsum dolor sit amet.
-                        </p>
+                        <p class="text-sm">Take quizzes before and after training</p>
                     </div>
                 </div>
-            </div>
-            <div class="w-10/12 px-4 md:w-1/2 xl:w-1/4">
                 <div class="bg-white rounded-xl overflow-hidden shadow-lg mb-10 dark:bg-emerald-700">
-                    <img src="../../../public/img/idea.png" width="150" alt="">
+                    <img src="../../../public/img/program3.jpg" width="150" alt="">
                     <div class="py-8 px-6">
-                        <h3 class=" font-semibold text-md">Unnamed
+                        <h3 class=" font-semibold text-md">Course Coding for Kids
                         </h3>
-                        <p class="text-sm"> Professor anjay</p>
-                        <p class="pt-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat, incidunt?</p>
-                        <p class="font-medium text-orange-500 text-sm">Lorem ipsum dolor sit amet.
-                        </p>
+                        <p class="text-sm">Coding training for children with various programming languages</p>
                     </div>
                 </div>
-            </div>
-            <div class="w-10/12 px-4 md:w-1/2 xl:w-1/4">
                 <div class="bg-white rounded-xl overflow-hidden shadow-lg mb-10 dark:bg-emerald-700">
-                    <img src="../../../public/img/idea.png" width="150" alt="">
+                    <img src="../../../public/img/program1.jpg" width="150" alt="">
                     <div class="py-8 px-6">
-                        <h3 class=" font-semibold text-md">Unnamed
+                        <h3 class=" font-semibold text-md">Monitoring Progress Study
                         </h3>
-                        <p class="text-sm"> Professor anjay</p>
-                        <p class="pt-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat, incidunt?</p>
-                        <p class="font-medium text-orange-500 text-sm">Lorem ipsum dolor sit amet.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="w-10/12 px-4 md:w-1/2 xl:w-1/4">
-                <div class="bg-white rounded-xl overflow-hidden shadow-lg mb-10 dark:bg-emerald-700">
-                    <img src="../../../public/img/idea.png" width="150" alt="">
-                    <div class="py-8 px-6">
-                        <h3 class=" font-semibold text-md">Unnamed
-                        </h3>
-                        <p class="text-sm"> Professor anjay</p>
-                        <p class="pt-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat, incidunt?</p>
-                        <p class="font-medium text-orange-500 text-sm">Lorem ipsum dolor sit amet.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="w-10/12 px-4 md:w-1/2 xl:w-1/4">
-                <div class="bg-white rounded-xl overflow-hidden shadow-lg mb-10 dark:bg-emerald-700">
-                    <img src="../../../public/img/idea.png" width="150" alt="">
-                    <div class="py-8 px-6">
-                        <h3 class=" font-semibold text-md">Unnamed
-                        </h3>
-                        <p class="text-sm"> Professor anjay</p>
-                        <p class="pt-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat, incidunt?</p>
-                        <p class="font-medium text-orange-500 text-sm">Lorem ipsum dolor sit amet.
-                        </p>
+                        <p class="text-sm">Monitoring learning progress</p>
                     </div>
                 </div>
             </div>

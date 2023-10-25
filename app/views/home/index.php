@@ -77,8 +77,7 @@ if (!isset($_SESSION["user"])) {
                     <h1 class="text-red-500">Languages</h1>
                 </div>
                 <div class="md:text-base sm:text-sm mt-5 md:mt-5 mb-3 md:mb-5">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo consequuntur recusandae
-                        molestias facilis. Aspernatur praesentium culpa sapiente soluta quae? Laboriosam?</p>
+                    <p>A programming language is a set of rules and symbols used to write computer programs. Programming languages ​​allow developers to create applications, software, and websites by organizing logic, workflows, and different functions. Programming languages can be classified as low-level languages (e.g. assembly language), mid-level languages (such as C, C++), and high-level languages (such as Python, Java) depending on the complexity.</p>
                 </div>
             </div>
             <div class="bg-blue-500 w-2/12 h-[40%] hidden xl:h-[60%] lg:block absolute top-28 right-60"></div>
@@ -100,7 +99,7 @@ if (!isset($_SESSION["user"])) {
                     <div class="px-6">
                         <h3 class="font-semibold text-lg">Python
                         </h3>
-                        <p class="pt-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat, incidunt?</p>
+                        <p class="pt-2">A versatile programming language with clear and easy-to-learn syntax, used for web development, data science, and artificial intelligence.</p>
                         <div class="w-full bg-gray-200 rounded-full overflow-hidden mt-4">
                             <div id="progress-bar" class="w-[10%] bg-red-500 h-4 text-center"></div>
                         </div>
@@ -112,14 +111,12 @@ if (!isset($_SESSION["user"])) {
                         target="_blank">Start</a>
                     </div>
                 </div>
-            </div>
-            <div class="w-10/12 px-4 md:w-1/2 xl:w-1/4">
                 <div class="bg-white rounded-xl overflow-hidden shadow-lg my-6 dark:bg-emerald-700">
-                    <img src="../../../public/img/Python.jpeg" class="p-5" alt="">
+                    <img src="../../../public/img/Java.jpeg" class="p-5" alt="">
                     <div class="px-6">
-                        <h3 class="font-semibold text-lg">Python
+                        <h3 class="font-semibold text-lg">Java
                         </h3>
-                        <p class="pt-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat, incidunt?</p>
+                        <p class="pt-2">A platform-agnostic programming language often used for application and mobile device-based software development.</p>
                         <div class="w-full bg-gray-200 rounded-full overflow-hidden mt-4">
                             <div id="progress-bar" class="w-[10%] bg-red-500 h-4 text-center"></div>
                         </div>
@@ -131,14 +128,12 @@ if (!isset($_SESSION["user"])) {
                         target="_blank">Start</a>
                     </div>
                 </div>
-            </div>
-            <div class="w-10/12 px-4 md:w-1/2 xl:w-1/4">
                 <div class="bg-white rounded-xl overflow-hidden shadow-lg my-6 dark:bg-emerald-700">
-                    <img src="../../../public/img/Python.jpeg" class="p-5" alt="">
+                    <img src="../../../public/img/CPP.jpeg" class="p-5" alt="">
                     <div class="px-6">
-                        <h3 class="font-semibold text-lg">Python
+                        <h3 class="font-semibold text-lg">C++
                         </h3>
-                        <p class="pt-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat, incidunt?</p>
+                        <p class="pt-2">An efficient and powerful programming language, often used in the development of system software, games and high-performance applications.</p>
                         <div class="w-full bg-gray-200 rounded-full overflow-hidden mt-4">
                             <div id="progress-bar" class="w-[10%] bg-red-500 h-4 text-center"></div>
                         </div>
@@ -150,14 +145,12 @@ if (!isset($_SESSION["user"])) {
                         target="_blank">Start</a>
                     </div>
                 </div>
-            </div>
-            <div class="w-10/12 px-4 md:w-1/2 xl:w-1/4">
                 <div class="bg-white rounded-xl overflow-hidden shadow-lg my-6 dark:bg-emerald-700">
-                    <img src="../../../public/img/Python.jpeg" class="p-5" alt="">
+                    <img src="../../../public/img/PHP.jpeg" class="p-5" alt="">
                     <div class="px-6">
-                        <h3 class="font-semibold text-lg">Python
+                        <h3 class="font-semibold text-lg">PHP
                         </h3>
-                        <p class="pt-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat, incidunt?</p>
+                        <p class="pt-2">A server-side programming language commonly used for dynamic web development and creating complex web applications.</p>
                         <div class="w-full bg-gray-200 rounded-full overflow-hidden mt-4">
                             <div id="progress-bar" class="w-[10%] bg-red-500 h-4 text-center"></div>
                         </div>
@@ -169,14 +162,12 @@ if (!isset($_SESSION["user"])) {
                         target="_blank">Start</a>
                     </div>
                 </div>
-            </div>
-            <div class="w-10/12 px-4 md:w-1/2 xl:w-1/4">
                 <div class="bg-white rounded-xl overflow-hidden shadow-lg my-6 dark:bg-emerald-700">
-                    <img src="../../../public/img/Python.jpeg" class="p-5" alt="">
+                    <img src="../../../public/img/CS.jpeg" class="p-5" alt="">
                     <div class="px-6">
-                        <h3 class="font-semibold text-lg">Python
+                        <h3 class="font-semibold text-lg">C#
                         </h3>
-                        <p class="pt-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat, incidunt?</p>
+                        <p class="pt-2">a powerful and versatile programming language designed for the development of various applications based on Windows and the .NET Framework.</p>
                         <div class="w-full bg-gray-200 rounded-full overflow-hidden mt-4">
                             <div id="progress-bar" class="w-[10%] bg-red-500 h-4 text-center"></div>
                         </div>
@@ -188,6 +179,7 @@ if (!isset($_SESSION["user"])) {
                         target="_blank">Start</a>
                     </div>
                 </div>
+
             </div>
         </div>
     </section>
