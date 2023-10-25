@@ -4,17 +4,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><?= $data["judul"]; ?></title>
+    <title>Login</title>
+    <link rel="stylesheet" href="../../../html/login/dist/output.css">
 </head>
 
 <body>
-    <h1>Hello World</h1>
-    <h1><?= index(); ?></h1>
-    <form action="<?= BASEURL; ?>/test" method="post">
-        <input type="text" name="nama">
-        <button type="submit">Submit</button>
-    </form>
-    
+    <section class="flex h-screen">
+        <div class="hidden md:block md:w-1/2">
+            <img src="./dist/hero-login.jpg" class="h-screen w-full" alt="">
+        </div>
+        <div class="container p-5 md:w-1/2 md:py-0 md:px-12 lg:px-16 mt-16">
+            <div class="row-auto">
+                <h1 class="text-center md:text-start font-bold text-3xl lg:text-5xl mb-4">Sign in</h1>
+                <p class="lg:text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus dignissimos sunt
+                    voluptate ea?</p>
+            </div>
+            <form action="../../app/database/database.php" method="post">
+                <div class="flex justify-center w-full">
+                    <div class="mt-5 container">
+                        <label for="email" class="text-xl lg:text-2xl block mb-2">
+                            Email Address
+                        </label>
+                        <input type="email" name="email" class="py-2 text-xl w-full rounded-xl bg-slate-200">
+                        <label for="password" class="text-xl lg:text-2xl block mb-2 mt-3">
+                            Password
+                        </label>
+                        <input type="password" name="password" class="py-2 text-xl w-full rounded-xl bg-slate-200 block">
+                        <label class="checkbox-container block relative ps-8 mb-3 cursor-pointer text-sm mt-2">
+                            <input type="checkbox" width="10" class="mt-3 ms-1 absolute opacity-0 cursor-pointer h-0 w-0">
+                            <span
+                                class="checkmark absolute top-0 left-0 h-6 w-6 bg-slate-200 after:content-none after:absolute after:hidden rounded-lg mt-3"></span>
+                            <span class="absolute top-0 left-0 h-6 w-6 opacity-0 hover:opacity-20 bg-black"></span>
+                        </label>
+                        <p class="ms-8 inline-block mt-2 mb-2 lg:text-lg">Remember me</p>
+                        <button type="submit" name="auth"
+                            class="mt-3 w-full py-1 bg-blue-400 text-white rounded-lg text-2xl lg:text-3xl">LOGIN</button>
+                    </div>
+                </div>
+                <div class="flex justify-between mt-3">
+                    <p>New user? <a href="../signup/index.html" class="underline text-blue-500">Sign up</a></p>
+                    <a href="../forgot_password/index.html" class="underline text-blue-500">Forgot Password?</a>
+                </div>
+            </form>
+        </div>
+    </section>
+
 </body>
 
 </html>

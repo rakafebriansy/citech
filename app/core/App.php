@@ -10,33 +10,33 @@ function parseURL(){
 }
 
 function App (){
-    $module = "home";
+    $page = "home";
     $function = "index";
 
     $url = parseURL();
 
     if (isset($url[0])){
         if (file_exists("../app/functions/" . $url[0] . ".php")){
-            $module = $url[0];
+            $page = $url[0];
             unset($url[0]);
         }
     }
-    require_once "../app/functions/" . $module . '.php';
+    require_once "../app/functions/" . $page . '.php';
 
     if(isset($url[1])) {
-        if (method_exists($module,$url[1])){
+        if (method_exists($page,$url[1])){
             $function = $url[1];
             unset($url[1]);
         }
     }
 
-    return [$module,$function];
+    return [$page,$function];
 }
 
-function views($folder, $module) {
-    $view = $folder . "/" .  $module;
+function views($page, $file) {
+    $view = $page . "/" .  $file;
     require_once '../app/views/' . $view . '.php';
 }
-function functions($module) {
-    require_once '../app/functions/' . $module . '.php';
+function functions($page) {
+    require_once '../app/functions/' . $page . '.php';
 }
