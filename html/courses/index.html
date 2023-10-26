@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Courses</title>
     <link rel="stylesheet" href="./dist/output.css">
 </head>
+
 <body>
     <header class="bg-white absolute top-0 left-0 w-full flex items-center z-10">
         <div class="container">
             <div class="flex items-center justify-between relative">
                 <div class="px-4">
-                <a href="../../views/home" class="font-bold text-lg text-primary block py-6">
+                    <a href="../../views/home" class="font-bold text-lg text-primary block py-6">
                         <img src="../../../public/img/logo.png" width="50" alt="">
                     </a>
                 </div>
@@ -24,13 +26,114 @@
             </div>
         </div>
     </header>
-    <section id="hero">
-        <img src="../../public/img/Python.jpeg" class="w-full" alt="">
+    <section id="hero" class="mt-16">
+        <img src="../../public/img/pybg.jpeg" class="w-full" alt="">
     </section>
-    <section>
-        <video controls width="800px">
-            <source src="../../public/video/python for kids.3gp" type="video/3gp">
+    <section class="flex justify-center my-12 md:my-20 lg:my-20 xl:my-24">
+        <video controls class="w-8/12">
+            <source src="../../public/video/python for kids.mp4" type="video/mp4">
         </video>
     </section>
+    <section id="description" class="container">
+        <h1 class="font-bold">Deskripsi</h1>
+        <p>Python adalah bahasa pemrograman tingkat tinggi yang sering digunakan dalam pengembangan perangkat lunak,
+            pemrosesan data, dan pengembangan web. Dikembangkan pada awal 1990-an oleh Guido van Rossum, Python menonjol
+            karena sintaks yang sederhana dan mudah dibaca, yang memungkinkan pengembang untuk mengekspresikan konsep
+            pemrograman dalam jumlah baris kode yang relatif sedikit.
+            Salah satu kelebihan Python adalah ekosistemnya yang kuat, yang mencakup berbagai pustaka dan kerangka kerja
+            yang memungkinkan pengembang untuk melakukan berbagai tugas, mulai dari pengembangan aplikasi web hingga
+            pemrosesan data besar. Python juga mendukung berbagai paradigma pemrograman, termasuk pemrograman
+            berorientasi objek, fungsional, dan prosedural.</p>
+    </section>
+    <section>
+        <div class="flex justify-start container mt-12">
+            <img src="../../public/img/pyicon.png" width="80" alt="">
+            <div class="font-bold text-3xl ms-4">
+                <h1>Tutorial Dasar</h1>
+                <h1>Pemrograman <span class="text-red-500">Python</span></h1>
+            </div>
+        </div>
+        <div class="flex justify-end container mb-12">
+            <div class="">
+                <div class="flex justify-center">
+                    <img src="../../public/img/certificate.png" class="block" width="40" alt="">
+                </div>
+                <button class="text-blue-500 font-semibold">Download</button>
+            </div>
+        </div>
+    </section>
+    <section>
+        <section id="ourprogram" class="mb-10">
+        <div class="flex flex-wrap justify-center">
+            <div id="faq1" class="w-3/4 bg-blue-400 text-white px-3 py-1 rounded-md mb-4">
+                <div class="flex justify-between">
+                    <p class="text-lg inline-block">Is this Prokidz course paid?</p>
+                    <button class="ps-1">▼</button>
+                </div>
+            </div>
+            <div id="faq2" class="w-3/4 bg-blue-400 text-white px-3 py-1 rounded-md mb-4">
+                <div class="flex justify-between">
+                    <p class="text-lg inline-block">Python Programming Preparation</p>
+                    <button class="ps-1">▼</button>
+                </div>
+            </div>
+            <div id="faq3" class="w-3/4 bg-blue-400 text-white px-3 py-1 rounded-md mb-4">
+                <div class="flex justify-between">
+                    <p class="text-lg inline-block">Basic Rules for Writing Python Syntax
+                    </p>
+                    <button class="ps-1">▼</button>
+                </div>
+            </div>
+            <div id="faq4" class="w-3/4 bg-blue-400 text-white px-3 py-1 rounded-md mb-4">
+                <div class="flex justify-between">
+                    <p class="text-lg inline-block">Getting to Know Variables and Data Types</p>
+                    <button class="ps-1">▼</button>
+                </div>
+            </div>
+            <div id="faq8" class="w-3/4 bg-blue-400 text-white px-3 py-1 rounded-md mb-4">
+                <div class="flex justify-between">
+                    <p class="text-lg inline-block">Input and Output Functions in Python</p>
+                    <button class="ps-1">▼</button>
+                </div>
+            </div>
+            <div id="faq5" class="w-3/4 bg-blue-400 text-white px-3 py-1 rounded-md mb-4">
+                <div class="flex justify-between">
+                    <p class="text-lg inline-block">Python Operators</p>
+                    <button class="ps-1">▼</button>
+                </div>
+            </div>
+            <div id="faq6" class="w-3/4 bg-blue-400 text-white px-3 py-1 rounded-md mb-4">
+                <div class="flex justify-between">
+                    <p class="text-lg inline-block">Python Condtions</p>
+                    <button class="ps-1" >▼</button>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+    </section>
+    <footer class="bg-lime-100">
+        <div class="container">
+            <div class="flex flex-wrap justify-between pt-8">
+                <div class="w-full px-4 mb-8 md:w-2/6">
+                    <span class="block font-bold mb-2"><img class="inline-block me-5" src="../../../public/img/logo.png"
+                            alt="" width="50"></span>
+                    <p>Providing special coding training for children in various languages and monitoring learning
+                        progress for each material</p>
+                </div>
+                <div class="w-full mb-12 px-4 md:w-1/6">
+                    <ul>
+                        <li><a href="../../views/faq" style="text-decoration: underline; ">FAQ</a></li>
+                        <li><a href="../../views/panduan" style="text-decoration: underline;">Panduan</a></li>
+                        <li>+0913-705-3875</li>
+                        <li>Email.com</li>
+                        <li>Instagram</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script></script>
 </body>
+
 </html>
